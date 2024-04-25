@@ -1,0 +1,43 @@
+Web Crawler 
+
+Functionality: 
+• Multithreading: Use multiple threads to fetch web pages concurrently. 
+• URL Queue: Implement a thread-safe queue to manage URLs that are pending to be 
+fetched. 
+• HTML Parsing: Extract links from the fetched web pages to find new URLs to crawl. 
+• Depth Control: Allow the crawler to limit the depth of the crawl to prevent infinite 
+recursion. 
+• Synchronization: Implement synchronization mechanisms to manage access to 
+shared resources among threads. 
+• Error Handling: Handle possible errors gracefully, including network errors, 
+parsing errors, and dead links. 
+• Logging: Log the crawler’s activity, including fetched URLs and encountered errors.
+
+
+Requirements: 
+• Makefile 
+	• all: Compiles the web crawler binary. 
+	• clean: Removes the web crawler binary and any other files generated during 
+	         compilation. 
+	• run: Executes the web crawler binary. This target may use default arguments for 
+	       demonstration purposes, but it should allow for flexible configuration to 
+	       accommodate various scenarios. 
+
+• Ensure your project is compilable on Linux using the gcc compiler, conforming at least to 
+  the ISO C11 standard. The following command should be used to compile your project, 
+  ensuring compatibility with the required flags and standards: gcc -std=c11 -pedantic -pthread crawler.c -o crawler
+
+• README.md 
+	- A markdown file that must include: - The names and RUID numbers of all 
+	  group members. - A comprehensive description of your implementation, focusing on its 
+	  architecture, the multithreading approach, the specific roles, and contributions of each 
+	  group member, and any libraries used. This should serve as a detailed overview of your 
+	  web crawler, akin to a manpage.  
+
+
+1) Getting the links 
+
+2) Ask user target for web crawler (Handle duplicates (Create a container))
+
+3) 
+
